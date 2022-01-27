@@ -56,7 +56,7 @@ export default {
   ],
   modules: [
     ['nuxt-i18n', {
-      baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+      baseUrl: process.env.BASE_URL || 'https://api.zer.vn'
     }],
     'cookie-universal-nuxt',
     'vue-scrollto/nuxt',
@@ -72,20 +72,20 @@ export default {
       { name: 'NL', label: 'Netherlands' }
     ],
     currencies: [
-      { name: 'EUR', label: 'Euro' },
+      { name: 'VND', label: 'Đồng' },
       { name: 'USD', label: 'Dollar' }
     ],
     locales: [
-      { code: 'en', label: 'English', file: 'en.js', iso: 'en' },
-      { code: 'de', label: 'German', file: 'de.js', iso: 'de' }
+      { code: 'vi', label: 'Tiếng Việt', file: 'vi.js', iso: 'vi' },
+      { code: 'en', label: 'English', file: 'en.js', iso: 'en' }
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'vi',
     lazy: true,
     seo: true,
     langDir: 'lang/',
     strategy: 'no_prefix',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'vi',
       numberFormats: {
         en: {
           currency: {
@@ -94,10 +94,10 @@ export default {
             currencyDisplay: 'symbol'
           }
         },
-        de: {
+        vi: {
           currency: {
             style: 'currency',
-            currency: 'EUR',
+            currency: 'VND',
             currencyDisplay: 'symbol'
           }
         }
