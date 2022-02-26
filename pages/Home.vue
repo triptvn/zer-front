@@ -124,24 +124,24 @@ export default {
     return {
       heroes: [
         {
-          title: 'Colorful summer dresses are already in store',
-          subtitle: 'SUMMER COLLECTION 2019',
+          title: 'Xu hướng thiết bị công nghệ 2022',
+          subtitle: 'Làm việc trực tuyến hiệu quả',
           background: '#eceff1',
-          image: '/homepage/bannerH.webp'
+          image: '/homepage/sony_accessories.jpg'
         },
         {
-          title: 'Colorful summer dresses are already in store',
-          subtitle: 'SUMMER COLLECTION 2019',
+          title: 'Làm việc tại bất kỳ đâu',
+          subtitle: 'Work From Anywhere',
           background: '#efebe9',
-          image: '/homepage/bannerA.webp',
+          image: '/homepage/best-laptop-accessories.jpg',
           className:
             'sf-hero-item--position-bg-top-left sf-hero-item--align-right'
         },
         {
-          title: 'Colorful summer dresses are already in store',
-          subtitle: 'SUMMER COLLECTION 2019',
+          title: 'Tinh gọn không gian làm việc',
+          subtitle: 'Kết nối không dây - Tự do di chuyển',
           background: '#fce4ec',
-          image: '/homepage/bannerB.webp'
+          image: '/homepage/laptops-cont-img-mob.jpg'
         }
       ],
       banners: [

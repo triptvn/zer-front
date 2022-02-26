@@ -1,5 +1,5 @@
 <template>
-  <SfTopBar class="topbar">
+  <!-- <SfTopBar class="topbar">
     <template #left>
         <SfButton class="sf-button--text">{{ $t('Help & FAQs') }}</SfButton>
       </template>
@@ -10,7 +10,7 @@
       <template #right>
         <LocaleSelector />
     </template>
-  </SfTopBar>
+  </SfTopBar> -->
 </template>
 
 <script>
