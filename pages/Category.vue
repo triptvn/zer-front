@@ -159,7 +159,6 @@
               :style="{ '--index': i }"
               :title="productGetters.getName(product)"
               :image="productGetters.getCoverImage(product)"
-              imageHeight="20.25rem"
               imageWidth="100%"
               :regular-price="$n(productGetters.getPrice(product).regular, 'currency')"
               :max-rating="5"
