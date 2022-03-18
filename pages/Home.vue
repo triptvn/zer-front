@@ -144,63 +144,65 @@ export default {
           image: '/homepage/laptops-cont-img-mob.jpg'
         }
       ],
-      banners: [
-        {
-          slot: 'banner-A',
-          subtitle: 'Dresses',
-          title: 'Cocktail & Party',
-          description:
-            'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
-          buttonText: 'Shop now',
-          image: {
-            mobile: this.$config.theme.home.bannerA.image.mobile,
-            desktop: this.$config.theme.home.bannerA.image.desktop
-          },
-          class: 'sf-banner--slim desktop-only',
-          link: this.$config.theme.home.bannerA.link
-        },
-        {
-          slot: 'banner-B',
-          subtitle: 'Dresses',
-          title: 'Linen Dresses',
-          description:
-            'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
-          buttonText: 'Shop now',
-          image: this.$config.theme.home.bannerB.image,
-          class: 'sf-banner--slim banner-central desktop-only',
-          link: this.$config.theme.home.bannerB.link
-        },
-        {
-          slot: 'banner-C',
-          subtitle: 'T-Shirts',
-          title: 'The Office Life',
-          image: this.$config.theme.home.bannerC.image,
-          class: 'sf-banner--slim banner__tshirt',
-          link: this.$config.theme.home.bannerC.link
-        },
-        {
-          slot: 'banner-D',
-          subtitle: 'Summer Sandals',
-          title: 'Eco Sandals',
-          image: this.$config.theme.home.bannerD.image,
-          class: 'sf-banner--slim',
-          link: this.$config.theme.home.bannerD.link
-        }
-      ],
+      // banners: [
+      //   {
+      //     slot: 'banner-A',
+      //     subtitle: 'Dresses',
+      //     title: 'Cocktail & Party',
+      //     description:
+      //       'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
+      //     buttonText: 'Shop now',
+      //     image: {
+      //       mobile: this.$config.theme.home.bannerA.image.mobile,
+      //       desktop: this.$config.theme.home.bannerA.image.desktop
+      //     },
+      //     class: 'sf-banner--slim desktop-only',
+      //     link: this.$config.theme.home.bannerA.link
+      //   },
+      //   {
+      //     slot: 'banner-B',
+      //     subtitle: 'Dresses',
+      //     title: 'Linen Dresses',
+      //     description:
+      //       'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
+      //     buttonText: 'Shop now',
+      //     image: this.$config.theme.home.bannerB.image,
+      //     class: 'sf-banner--slim banner-central desktop-only',
+      //     link: this.$config.theme.home.bannerB.link
+      //   },
+      //   {
+      //     slot: 'banner-C',
+      //     subtitle: 'T-Shirts',
+      //     title: 'The Office Life',
+      //     image: this.$config.theme.home.bannerC.image,
+      //     class: 'sf-banner--slim banner__tshirt',
+      //     link: this.$config.theme.home.bannerC.link
+      //   },
+      //   {
+      //     slot: 'banner-D',
+      //     subtitle: 'Summer Sandals',
+      //     title: 'Eco Sandals',
+      //     image: this.$config.theme.home.bannerD.image,
+      //     class: 'sf-banner--slim',
+      //     link: this.$config.theme.home.bannerD.link
+      //   }
+      // ],
       products: [
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productA.webp',
-          price: { regular: '50.00 $' },
+          title: 'Sony WF-1000XM4',
+          image: '/homepage/wf1000xm4-bme-sony-headphone-wf1000xm4-bme__preview.jpg',
+          price: { regular: '5,490k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: true
+          isInWishlist: true,
+          link: '/p/59/tai-nghe-sony-wf-1000xm4-'
         },
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productB.webp',
-          price: { regular: '50.00 $' },
+          title: 'Sennheiser MTW 2',
+          image: '/homepage/508674-sennheiser-momentum-true-wireless-2-black__preview.jpg',
+          price: { regular: '8.499k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: false
+          isInWishlist: false,
+          link: '/p/58/tai-nghe-sennheiser-momentum-true-wireless-2'
         },
         {
           title: 'Cream Beach Bag',
@@ -314,7 +316,7 @@ export default {
   }
   &-central {
     @include for-desktop {
-      --banner-container-flex: 0 0 70%;
+      --banner-container-flex: 0 0 0%;
     }
   }
 }

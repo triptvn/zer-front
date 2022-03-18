@@ -8,7 +8,7 @@ export default {
     host: 'localhost'
   },
   head: {
-    title: 'Zer Shop',
+    title: 'Zer - Thiết bị công nghệ của thế hệ Z',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -63,13 +63,14 @@ export default {
     '@vue-storefront/middleware/nuxt'
   ],
   i18n: {
-    currency: 'USD',
-    country: 'US',
+    currency: 'VND',
+    country: 'VN',
     countries: [
       { name: 'US', label: 'United States', states: ['California', 'Nevada'] },
       { name: 'AT', label: 'Austria' },
       { name: 'DE', label: 'Germany' },
-      { name: 'NL', label: 'Netherlands' }
+      { name: 'NL', label: 'Netherlands' },
+      { name: 'VN', label: 'Vietnam' }
     ],
     currencies: [
       { name: 'VND', label: 'Đồng' },
