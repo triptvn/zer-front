@@ -33,8 +33,8 @@
 
     <LazyHydrate when-visible>
       <div class="similar-products">
-        <SfHeading title="Match with it" :level="2"/>
-        <nuxt-link :to="localePath('/c/women')" class="smartphone-only">See all</nuxt-link>
+        <nuxt-link :to="localePath('/c/business')" ><SfHeading title="Dành cho Doanh Nhân" :level="2"/>
+        </nuxt-link>
       </div>
     </LazyHydrate>
 
@@ -71,14 +71,14 @@
         </SfCarousel>
     </LazyHydrate>
 
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <SfCallToAction
         title="Subscribe to Newsletters"
         description="Be aware of upcoming sales and events. Receive gifts and special offers!"
         image="/homepage/newsletter.webp"
         class="call-to-action"
       />
-    </LazyHydrate>
+    </LazyHydrate> -->
 
     <LazyHydrate when-visible>
       <InstagramFeed />
@@ -189,60 +189,62 @@ export default {
       // ],
       products: [
         {
-          title: 'Sony WF-1000XM4',
-          image: '/homepage/wf1000xm4-bme-sony-headphone-wf1000xm4-bme__preview.jpg',
-          price: { regular: '5,490k' },
+          title: 'Asus ZenBook Flip 13.3inch i7 16Bb',
+          image: '/homepage/asus-zenbook-13-ux363ea-hp163t__preview.jpg',
+          price: { regular: '33,990k' },
           rating: { max: 5, score: 4 },
           isInWishlist: true,
-          link: '/p/59/tai-nghe-sony-wf-1000xm4-'
+          link: '/p/107/asus-zenbook-flip-13-ux363ea-hp163t-core-i7-1165g7-16gb-512gb-intel-iris-13-3-inch-fhd-oled-win-10-xam'
         },
         {
-          title: 'Sennheiser MTW 2',
-          image: '/homepage/508674-sennheiser-momentum-true-wireless-2-black__preview.jpg',
-          price: { regular: '8.499k' },
+          title: 'Sennheiser CX Plus TW',
+          image: '/homepage/3891_sennheiser_cx_plus_true_wireless_black_1__preview.jpg',
+          price: { regular: '4.699k' },
           rating: { max: 5, score: 4 },
           isInWishlist: false,
-          link: '/p/58/tai-nghe-sennheiser-momentum-true-wireless-2'
+          link: '/p/76/sennheiser-cx-plus-true-wireless'
         },
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productC.webp',
-          price: { regular: '50.00 $' },
+          title: 'Sony WI-C310',
+          image: '/homepage/wi-c310-lc-e-sony-headphone-wi-c310-lc-e__preview.jpg',
+          price: { regular: '950 k' },
+          rating: { max: 5, score: 4 },
+          isInWishlist: false,
+          link: '/p/64/tai-nghe-bluetooth-sony-wi-c310'
+        },
+        {
+          title: 'Pin Zendure 10k mAh',
+          image: '/homepage/pin-du-phong-10.000mah-18w-qc-3__preview.jpg',
+          price: { regular: '499 k' },
+          rating: { max: 5, score: 4 },
+          isInWishlist: false,
+          link: '/p/77/pin-sac-du-phong-zendure-zdjp221-b'
+        },
+        {
+          title: 'Loa Bluetooth SRS-RA5000',
+          image: '/homepage/srs-ra5000-msp1-sony-speaker-srs-ra5000-msp1__02__preview.png',
+          price: { regular: '14,490 k' },
           rating: { max: 5, score: 4 },
           isInWishlist: false
         },
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productA.webp',
-          price: { regular: '50.00 $' },
+          title: 'Asus Vivobook 14inch i7 RAM8Gb',
+          image: '/homepage/vivobook-14-a415ep-eb118t-2__preview.jpg',
+          price: { regular: '21.190 k' },
           rating: { max: 5, score: 4 },
           isInWishlist: false
         },
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productB.webp',
-          price: { regular: '50.00 $' },
+          title: 'Sony WF-1000XM4',
+          image: '/homepage/wf1000xm4-bme-sony-headphone-wf1000xm4-bme__preview.jpg',
+          price: { regular: '5,490 k' },
           rating: { max: 5, score: 4 },
           isInWishlist: false
         },
         {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productC.webp',
-          price: { regular: '50.00 $' },
-          rating: { max: 5, score: 4 },
-          isInWishlist: false
-        },
-        {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productA.webp',
-          price: { regular: '50.00 $' },
-          rating: { max: 5, score: 4 },
-          isInWishlist: false
-        },
-        {
-          title: 'Cream Beach Bag',
-          image: '/homepage/productB.webp',
-          price: { regular: '50.00 $' },
+          title: 'Tai nghe JVC HA-S31BT-B-U',
+          image: '/homepage/jvc-ha-s31bt-b-u-jvc-headphone-ha-s31bt-b-u__preview.jpg',
+          price: { regular: '1.290 k' },
           rating: { max: 5, score: 4 },
           isInWishlist: false
         }

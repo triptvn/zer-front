@@ -1,6 +1,6 @@
 <template>
-  <SfSection title-heading="Share Your Look" subtitle-heading="#YOURLOOK" class="title">
-    <div class="grid grid-images">
+  <SfSection title-heading="Zer - công nghệ của thế hệ Z" subtitle-heading="#ZER" class="title">
+    <!-- <div class="grid grid-images">
       <div class="grid__row">
         <div class="grid__col">
           <SfImage v-if="isMobile" src="/homepage/imageAm.webp" alt="katherina_trn" :width="160" :height="160">katherina_trn</SfImage>
@@ -21,7 +21,7 @@
           <SfImage v-else src="/homepage/imageDd.webp" alt="katherina_trn" :width="470" :height="470">katherina_trn</SfImage>
         </div>
       </div>
-    </div>
+    </div> -->
   </SfSection>
 </template>
 <script>
