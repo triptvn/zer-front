@@ -21,9 +21,9 @@
           :link="localePath(`/c/${category.link}`)"
         />
       </template>
-      <template #aside>
+      <!-- <template #aside>
         <LocaleSelector class="smartphone-only" />
-      </template>
+      </template> -->
       <template #header-icons>
         <div class="sf-header__icons">
           <SfButton
