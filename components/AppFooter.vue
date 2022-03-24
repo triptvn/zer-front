@@ -4,11 +4,6 @@
       <img src="/icons/zer-logo-2022.png" style="margin-bottom: 10px;"><p>Thiết bị công nghệ thế hệ Z</p>
 
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('Contact us')">
-      <i class="fa fa-location-arrow" style="width: 15px; text-align: center; margin-right: 4px;"></i> 413/29 Nguyễn Kiệm, phường 9, quận Phú Nhuận, TP. Hồ Chí Minh<br><br>
-      <i class="fa fa-mobile" style="width: 15px; text-align: center; margin-right: 4px;"></i> Hotline: 096.433.863<br>
-
-    </SfFooterColumn>
 
     <SfFooterColumn :title="$t('Categories')">
       <SfList>
@@ -40,12 +35,19 @@
             <router-link to="/c/do-dien-tu" exact>
               <SfMenuItem
                 class="sf-footer__menu-item"
-                :label="$t('Thiết bị khác')"
+                :label="$t('Phụ kiện khác')"
               />
             </router-link>
           </SfListItem>
       </SfList>
     </SfFooterColumn>
+
+    <SfFooterColumn :title="$t('Contact us')">
+      <i class="fa fa-location-arrow" style="width: 15px; text-align: center; margin-right: 4px;"></i>413/29 Nguyễn Kiệm, p.9, quận Phú Nhuận, HCM<br><br>
+      <i class="fa fa-mobile" style="width: 15px; text-align: center; margin-right: 4px;"></i>Hotline: 096.433.863<br>
+
+    </SfFooterColumn>
+
   </SfFooter>
 </template>
 

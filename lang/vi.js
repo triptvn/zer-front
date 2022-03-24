@@ -173,5 +173,5 @@ export default {
   'Laptop': 'Laptop',
   'Thiết bị âm thanh': 'Thiết bị âm thanh',
   'Chuột máy tính': 'Chuột máy tính',
-  'Thiết bị khác': 'Thiết bị khác'
+  'Phụ kiện khác': 'Phụ kiện khác'
 };

@@ -10,6 +10,7 @@
           :background="hero.background"
           :image="hero.image"
           :class="hero.className"
+          :url="hero.link"
         />
       </SfHero>
     </LazyHydrate>
@@ -126,22 +127,25 @@ export default {
         {
           title: 'Xu hướng thiết bị công nghệ 2022',
           subtitle: 'Làm việc trực tuyến hiệu quả',
-          background: '#eceff1',
-          image: '/homepage/sony_accessories.jpg'
+          background: '#fbf0dd',
+          image: '/homepage/sony_accessories.jpg',
+          link: '/c/sony/thiet-bi-am-thanh?itemsPerPage=100'
         },
         {
-          title: 'Làm việc tại bất kỳ đâu',
-          subtitle: 'Work From Anywhere',
-          background: '#efebe9',
-          image: '/homepage/best-laptop-accessories.jpg',
+          title: '',
+          subtitle: '',
+          background: '#a4a5a9',
+          image: '/homepage/ms_banner_img1.webp',
           className:
-            'sf-hero-item--position-bg-top-left sf-hero-item--align-right'
+            'sf-hero-item--position-bg-top-left sf-hero-item--align-right',
+          link: '/c/zenbook'
         },
         {
-          title: 'Tinh gọn không gian làm việc',
-          subtitle: 'Kết nối không dây - Tự do di chuyển',
+          title: '',
+          subtitle: '',
           background: '#fce4ec',
-          image: '/homepage/laptops-cont-img-mob.jpg'
+          image: '/homepage/ms_banner_img4.webp',
+          link: '/p/117/asus-zenbook-flip-13-ux363ea-hp740w-i7-1165g7-16gb-512gb-ssd-13-3fhd-touch-vga-on-win11-pine-grey-tui-sleeve-pen-cap-numpad'
         }
       ],
       // banners: [
