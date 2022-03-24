@@ -1,97 +1,50 @@
 <template>
-  <SfFooter :column="4" multiple class="footer">
-    <SfFooterColumn :title="$t('About us')">
+  <SfFooter :column="3" multiple class="footer">
+    <SfFooterColumn :title="$t('')">
+      <img src="/icons/zer-logo-2022.png" style="margin-bottom: 10px;"><p>Thiết bị công nghệ thế hệ Z</p>
+
+    </SfFooterColumn>
+    <SfFooterColumn :title="$t('Contact us')">
+      <i class="fa fa-location-arrow" style="width: 15px; text-align: center; margin-right: 4px;"></i> 413/29 Nguyễn Kiệm, phường 9, quận Phú Nhuận, TP. Hồ Chí Minh<br><br>
+      <i class="fa fa-mobile" style="width: 15px; text-align: center; margin-right: 4px;"></i> Hotline: 096.433.863<br>
+
+    </SfFooterColumn>
+
+    <SfFooterColumn :title="$t('Categories')">
       <SfList>
         <SfListItem>
-            <router-link to="/page/about" exact>
+            <router-link to="/c/laptop" exact>
               <SfMenuItem
                 class="sf-footer__menu-item"
-                :label="$t('Who we are')"
+                :label="$t('Laptop')"
               />
             </router-link>
           </SfListItem>
           <SfListItem>
-            <router-link to="/page/quality" exact>
+            <router-link to="/c/thiet-bi-am-thanh" exact>
               <SfMenuItem
                 class="sf-footer__menu-item"
-                :label="$t('Quality in the details')"
+                :label="$t('Thiết bị âm thanh')"
               />
             </router-link>
           </SfListItem>
           <SfListItem>
-            <router-link to="/page/reviews" exact>
+            <router-link to="/c/chuot-may-tinh" exact>
               <SfMenuItem
                 class="sf-footer__menu-item"
-                :label="$t('Customer reviews')"
+                :label="$t('Chuột máy tính')"
+              />
+            </router-link>
+          </SfListItem>
+          <SfListItem>
+            <router-link to="/c/do-dien-tu" exact>
+              <SfMenuItem
+                class="sf-footer__menu-item"
+                :label="$t('Thiết bị khác')"
               />
             </router-link>
           </SfListItem>
       </SfList>
-    </SfFooterColumn>
-    <SfFooterColumn :title="$t('Departments')">
-      <SfList>
-        <SfListItem
-          v-for="item in departments"
-          :key="item"
-        >
-          <SfMenuItem
-            :label="$t(item)"
-          />
-        </SfListItem>
-      </SfList>
-    </SfFooterColumn>
-    <SfFooterColumn :title="$t('Help')">
-      <SfList>
-        <SfListItem>
-            <router-link to="/page/customer" exact>
-              <SfMenuItem
-                class="sf-footer__menu-item"
-                :label="$t('Customer service')"
-              />
-            </router-link>
-          </SfListItem>
-          <SfListItem>
-            <router-link to="/page/size" exact>
-              <SfMenuItem
-                class="sf-footer__menu-item"
-                :label="$t('Size guide')"
-              />
-            </router-link>
-          </SfListItem>
-          <SfListItem>
-            <router-link to="/page/contact" exact>
-              <SfMenuItem
-                class="sf-footer__menu-item"
-                :label="$t('Contact us')"
-              />
-            </router-link>
-          </SfListItem>
-      </SfList>
-    </SfFooterColumn>
-    <SfFooterColumn :title="$t('Payment & Delivery')">
-      <SfList>
-        <SfListItem>
-            <router-link to="/page/terms" exact>
-              <SfMenuItem
-                class="sf-footer__menu-item"
-                :label="$t('Purchase terms')"
-              />
-            </router-link>
-          </SfListItem>
-          <SfListItem>
-            <router-link to="/page/guarantee" exact>
-              <SfMenuItem
-                class="sf-footer__menu-item"
-                :label="$t('Guarantee')"
-              />
-            </router-link>
-          </SfListItem>
-      </SfList>
-    </SfFooterColumn>
-    <SfFooterColumn title="Social">
-      <div class="footer__socials">
-        <SfImage class="footer__social-image" v-for="item in social" :key="item" :src="'/icons/'+item+'.svg'" :alt="item" width="32" height="32" />
-      </div>
     </SfFooterColumn>
   </SfFooter>
 </template>
@@ -118,7 +71,7 @@ export default {
 
 <style lang="scss">
 .footer {
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.75rem;
   @include for-desktop {
     margin-bottom: 0;
   }
@@ -141,12 +94,12 @@ export default {
   @include for-desktop {
     border-top: var(--spacer-xs) solid var(--c-primary);
     padding-bottom: 0;
-    margin-top: var(--spacer-2xl);
+    // margin-top: var(--spacer-2xl);
   }
   &__container {
     margin: var(--spacer-sm);
     @include for-desktop {
-      max-width: 69rem;
+      max-width: rem;
       margin: 0 auto;
     }
   }

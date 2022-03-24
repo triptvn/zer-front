@@ -1,15 +1,14 @@
 /* eslint-disable  */
 
 export default {
-  'Categories': 'Categories',
+  'Categories': 'Danh mục',
   'Filters': 'Filter',
   'Sort by': 'Sort by',
   'Products found': 'Products found',
-  'About us': 'About us',
+  'About us': 'Giới thiệu',
   'Who we are': 'Who we are',
   'Quality in the details': 'Quality in the details',
   'Customer Reviews': 'Customer Reviews',
-  'Departments': 'Departments',
   'Women fashion': 'Women fashion',
   'Men fashion': 'Men fashion',
   'Kidswear': 'Kidswear',
@@ -170,5 +169,9 @@ export default {
   'Primary contacts for any questions': 'Primary contacts for any questions',
   'Your Account': 'Your Account',
   'What can we improve': 'What can we improve',
-  'Update email': 'Update email'
+  'Update email': 'Update email',
+  'Laptop': 'Laptop',
+  'Thiết bị âm thanh': 'Thiết bị âm thanh',
+  'Chuột máy tính': 'Chuột máy tính',
+  'Thiết bị khác': 'Thiết bị khác'
 };

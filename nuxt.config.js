@@ -66,19 +66,13 @@ export default {
     currency: 'VND',
     country: 'VN',
     countries: [
-      { name: 'US', label: 'United States', states: ['California', 'Nevada'] },
-      { name: 'AT', label: 'Austria' },
-      { name: 'DE', label: 'Germany' },
-      { name: 'NL', label: 'Netherlands' },
       { name: 'VN', label: 'Vietnam' }
     ],
     currencies: [
-      { name: 'VND', label: 'Đồng' },
-      { name: 'USD', label: 'Dollar' }
+      { name: 'VND', label: 'Đồng' }
     ],
     locales: [
-      { code: 'vi', label: 'Tiếng Việt', file: 'vi.js', iso: 'vi' },
-      { code: 'en', label: 'English', file: 'en.js', iso: 'en' }
+      { code: 'vi', label: 'Tiếng Việt', file: 'vi.js', iso: 'vi' }
     ],
     defaultLocale: 'vi',
     lazy: true,
@@ -91,7 +85,7 @@ export default {
         en: {
           currency: {
             style: 'currency',
-            currency: 'USD',
+            currency: 'VND',
             currencyDisplay: 'symbol'
           }
         },
@@ -148,7 +142,7 @@ export default {
   },
   googleFonts: {
     families: {
-      Raleway: {
+      Neogrotesk: {
         wght: [300, 400, 500, 600, 700],
         ital: [400]
       },

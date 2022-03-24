@@ -25,7 +25,8 @@ import {
   SfSection,
   SfLoader
 } from '@storefront-ui/vue';
-import { getCalculatedPrice } from '~/helpers';
+import { getCalculatedPrice } from '../helpers';
+
 export default {
   name: 'RelatedProducts',
   setup() {
