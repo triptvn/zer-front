@@ -64,7 +64,7 @@
               :score-rating="product.rating.score"
               :show-add-to-cart-button="true"
               :is-on-wishlist="product.isInWishlist"
-              :link="localePath({ name: 'home' })"
+              :link="localePath(product.link)"
               class="carousel__item__product"
               @click:wishlist="toggleWishlist(i)"
             />
