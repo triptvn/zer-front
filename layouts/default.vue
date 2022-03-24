@@ -15,6 +15,7 @@
       </LazyHydrate>
       <CartSidebar />
       <WishlistSidebar />
+      <CategorySidebar />
       <LoginModal />
       <Notification />
     </div>
@@ -31,6 +32,7 @@ import AppFooter from '~/components/AppFooter.vue';
 import TopBar from '~/components/TopBar.vue';
 import CartSidebar from '~/components/CartSidebar.vue';
 import WishlistSidebar from '~/components/WishlistSidebar.vue';
+import CategorySidebar from '~/components/CategorySidebar.vue';
 import LoginModal from '~/components/LoginModal.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 import Notification from '~/components/Notification';
@@ -46,6 +48,7 @@ export default {
     AppFooter,
     CartSidebar,
     WishlistSidebar,
+    CategorySidebar,
     LoginModal,
     Notification
   }

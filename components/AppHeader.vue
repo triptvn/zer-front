@@ -8,7 +8,7 @@
       <template #logo>
         <nuxt-link :to="localePath('/')" class="sf-header__logo">
           <!-- <SfImage src="/icons/logo.svg" :alt="$t('Vue Storefront Next')" class="sf-header__logo-image"/> -->
-          <SfImage src="/icons/zer-logo-2022.png" :alt="$t('Zer - gen Z\' items')" class="sf-header__logo-image"/>
+          <SfImage src="/icons/zer-logo-2022.png" :alt="$t('Zer - Generation Z Trends')" class="sf-header__logo-image"/>
         </nuxt-link>
       </template>
       <template #navigation>
@@ -138,7 +138,7 @@ export default {
   },
   directives: { clickOutside },
   setup(props, { root }) {
-    const { toggleCartSidebar, toggleWishlistSidebar, toggleLoginModal, isMobileMenuOpen } = useUiState();
+    const { toggleCartSidebar, toggleWishlistSidebar, toggleCategorySidebar, toggleLoginModal, isMobileMenuOpen } = useUiState();
     const { setTermForUrl, getFacetsFromURL } = useUiHelpers();
     const { isAuthenticated, load: loadUser } = useUser();
     const { cart, load: loadCart } = useCart();
@@ -228,6 +228,7 @@ export default {
       handleAccountClick,
       toggleCartSidebar,
       toggleWishlistSidebar,
+      toggleCategorySidebar,
       setTermForUrl,
       term,
       isSearchOpen,

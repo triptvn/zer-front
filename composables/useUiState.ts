@@ -7,6 +7,7 @@ Vue.use(VueCompositionAPI);
 const state = reactive({
   isCartSidebarOpen: false,
   isWishlistSidebarOpen: false,
+  isCategorySidebarOpen: false,
   isLoginModalOpen: false,
   isCategoryGridView: true,
   isFilterSidebarOpen: false
@@ -21,6 +22,12 @@ const useUiState = () => {
   const isWishlistSidebarOpen = computed(() => state.isWishlistSidebarOpen);
   const toggleWishlistSidebar = () => {
     state.isWishlistSidebarOpen = !state.isWishlistSidebarOpen;
+  };
+
+  const isCategorySidebarOpen = computed(() => state.isCategorySidebarOpen);
+  const toggleCategorySidebar = () => {
+    // debugger
+    state.isCategorySidebarOpen = !state.isCategorySidebarOpen
   };
 
   const isLoginModalOpen = computed(() => state.isLoginModalOpen);
@@ -44,11 +51,13 @@ const useUiState = () => {
   return {
     isCartSidebarOpen,
     isWishlistSidebarOpen,
+    isCategorySidebarOpen,
     isLoginModalOpen,
     isCategoryGridView,
     isFilterSidebarOpen,
     toggleCartSidebar,
     toggleWishlistSidebar,
+    toggleCategorySidebar,
     toggleLoginModal,
     changeToCategoryGridView,
     changeToCategoryListView,
