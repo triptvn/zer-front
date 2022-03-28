@@ -25,8 +25,8 @@
                 :key="cartGetters.getItemSku(product)"
                 :image="cartGetters.getItemImage(product)"
                 :title="cartGetters.getItemName(product)"
-                :regular-price="$n(cartGetters.getItemPrice(product).regular, 'currency')"
-                :special-price="cartGetters.getItemPrice(product).special && $n(cartGetters.getItemPrice(product).special, 'currency')"
+                :regular-price="$n(cartGetters.getItemPrice(product).regular*1000, 'currency')"
+                :special-price="cartGetters.getItemPrice(product).special*1000 && $n(cartGetters.getItemPrice(product).special*1000, 'currency')"
                 :stock="99999"
                 @click:remove="removeItem({ product })"
                 class="collected-product"
@@ -80,7 +80,7 @@
             >
               <template #value>
                 <SfPrice
-                  :regular="$n(totals.subtotal, 'currency')"
+                  :regular="$n(totals.subtotal*1000, 'currency')"
                 />
               </template>
             </SfProperty>

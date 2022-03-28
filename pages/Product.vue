@@ -25,7 +25,7 @@
         </div>
         <div class="product__price-and-rating">
           <SfPrice
-            :regular="$n(productGetters.getPrice(product).regular, 'currency')"
+            :regular="$n(productGetters.getPrice(product).regular*1000, 'currency')"
           />
           <div>
             <div class="product__rating">

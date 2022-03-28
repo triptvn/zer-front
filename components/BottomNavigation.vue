@@ -14,7 +14,7 @@
       @click="toggleCartSidebar"
     >
       <template #icon>
-        <SfCircleIcon aria-label="Add to cart">
+        <SfCircleIcon aria-label="Chọn mua">
           <SfIcon
             icon="add_to_cart"
             color="white"

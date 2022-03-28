@@ -15,7 +15,7 @@
       />
       <SfProperty
         :name="$t('Subtotal')"
-        :value="$n(totals.subtotal, 'currency')"
+        :value="$n(totals.subtotal*1000, 'currency')"
         :class="['sf-property--full-width', 'sf-property--large property', { discounted: hasSpecialPrice }]"
       />
       <SfProperty
@@ -27,7 +27,7 @@
       />
      <SfProperty
         v-if="hasSpecialPrice"
-        :value="$n(totals.special, 'currency')"
+        :value="$n(totals.special*1000, 'currency')"
         class="sf-property--full-width sf-property--small property special-price"
       />
       <SfProperty
@@ -37,7 +37,7 @@
       />
       <SfProperty
         :name="$t('Total')"
-        :value="$n(totals.total, 'currency')"
+        :value="$n(totals.total*1000, 'currency')"
         class="sf-property--full-width sf-property--large property-total"
       />
     </div>

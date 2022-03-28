@@ -25,7 +25,7 @@
                 :key="wishlistGetters.getItemSku(product)"
                 :image="wishlistGetters.getItemImage(product)"
                 :title="wishlistGetters.getItemName(product)"
-                :regular-price="$n(wishlistGetters.getItemPrice(product).regular, 'currency')"
+                :regular-price="$n(wishlistGetters.getItemPrice(product).regular*1000, 'currency')"
                 :stock="99999"
                 image-width="180"
                 image-height="200"

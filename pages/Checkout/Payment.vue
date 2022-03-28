@@ -38,8 +38,8 @@
         <SfTableData class="table__data">{{ cartGetters.getItemQty(product) }}</SfTableData>
         <SfTableData class="table__data price">
           <SfPrice
-            :regular="$n(cartGetters.getItemPrice(product).regular, 'currency')"
-            :special="cartGetters.getItemPrice(product).special && $n(cartGetters.getItemPrice(product).special, 'currency')"
+            :regular="$n(cartGetters.getItemPrice(product).regular*1000, 'currency')"
+            :special="cartGetters.getItemPrice(product).special*1000 && $n(cartGetters.getItemPrice(product).special*1000, 'currency')"
             class="product-price"
           />
         </SfTableData>

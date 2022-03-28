@@ -21,7 +21,7 @@
           />
           <SfProperty
             name="Total"
-            :value="$n(orderGetters.getPrice(currentOrder), 'currency')"
+            :value="$n(orderGetters.getPrice(currentOrder)*1000, 'currency')"
             class="sf-property--full-width property"
           />
         </div>
@@ -36,7 +36,7 @@
               {{ orderGetters.getItemName(item) }}
             </SfTableData>
             <SfTableData>{{ orderGetters.getItemQty(item) }}</SfTableData>
-            <SfTableData>{{ $n(orderGetters.getItemPrice(item), 'currency') }}</SfTableData>
+            <SfTableData>{{ $n(orderGetters.getItemPrice(item)*1000, 'currency') }}</SfTableData>
           </SfTableRow>
         </SfTable>
       </div>
@@ -59,7 +59,7 @@
           <SfTableRow v-for="order in orders.items" :key="orderGetters.getId(order)">
             <SfTableData v-e2e="'order-number'">{{ orderGetters.getId(order) }}</SfTableData>
             <SfTableData>{{ orderGetters.getDate(order) }}</SfTableData>
-            <SfTableData>{{ $n(orderGetters.getPrice(order), 'currency') }}</SfTableData>
+            <SfTableData>{{ $n(orderGetters.getPrice(order)*1000, 'currency') }}</SfTableData>
             <SfTableData>
               <span :class="getStatusTextClass(order)">{{ orderGetters.getStatus(order) }}</span>
             </SfTableData>
