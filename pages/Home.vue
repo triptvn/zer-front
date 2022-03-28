@@ -17,7 +17,7 @@
 
     <LazyHydrate when-visible>
       <SfBannerGrid :banner-grid="1" class="banner-grid">
-        <template v-for="item in banners" v-slot:[item.slot]>
+        <!-- <template v-for="item in banners" v-slot:[item.slot]>
           <SfBanner
             :key="item.slot"
             :title="item.title"
@@ -28,7 +28,7 @@
             :image="item.image"
             :class="item.class"
           />
-        </template>
+        </template> -->
       </SfBannerGrid>
     </LazyHydrate>
 
@@ -229,28 +229,32 @@ export default {
           image: '/homepage/srs-ra5000-msp1-sony-speaker-srs-ra5000-msp1__02__preview.png',
           price: { regular: '14,490 k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: false
+          isInWishlist: false,
+          link: '/p/86/loa-khong-day-cao-cap-srs-ra5000'
         },
         {
           title: 'Asus Vivobook 14inch i7 RAM8Gb',
           image: '/homepage/vivobook-14-a415ep-eb118t-2__preview.jpg',
           price: { regular: '21.190 k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: false
+          isInWishlist: false,
+          link: '/p/106/laptop-asus-vivobook-a415ep-eb118t-i7-1165g78gb512gb-ssd14fhdmx330-2gbwin10silver'
         },
         {
           title: 'Sony WF-1000XM4',
           image: '/homepage/wf1000xm4-bme-sony-headphone-wf1000xm4-bme__preview.jpg',
           price: { regular: '5,490 k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: false
+          isInWishlist: false,
+          link: '/p/59/tai-nghe-sony-wf-1000xm4-'
         },
         {
           title: 'Tai nghe JVC HA-S31BT-B-U',
           image: '/homepage/jvc-ha-s31bt-b-u-jvc-headphone-ha-s31bt-b-u__preview.jpg',
           price: { regular: '1.290 k' },
           rating: { max: 5, score: 4 },
-          isInWishlist: false
+          isInWishlist: false,
+          link: '/p/81/tai-nghe-jvc-khong-day-ha-s31bt-b-u'
         }
       ]
     };

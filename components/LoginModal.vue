@@ -128,7 +128,7 @@
                 :valid="!errors[0]"
                 :errorMessage="errors[0]"
                 name="create-account"
-                label="I want to create an account"
+                label="Xác nhận tạo tài khoản"
                 class="form__element"
               />
             </ValidationProvider>

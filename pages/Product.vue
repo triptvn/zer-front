@@ -131,7 +131,7 @@
       <RelatedProducts
         :products="relatedProducts"
         :loading="relatedLoading"
-        title="Match it with"
+        title="Sản phẩm liên quan"
       />
     </LazyHydrate>
 
@@ -139,9 +139,9 @@
       <InstagramFeed />
     </LazyHydrate>
 
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <MobileStoreBanner />
-    </LazyHydrate>
+    </LazyHydrate> -->
 
   </div>
 </template>
@@ -171,7 +171,7 @@ import RelatedProducts from '~/components/RelatedProducts.vue';
 import { ref, computed } from '@vue/composition-api';
 import { useProduct, useCart, useRelatedProducts, productGetters, useReview, reviewGetters } from '@vue-storefront/vendure';
 import { onSSR } from '@vue-storefront/core';
-import MobileStoreBanner from '~/components/MobileStoreBanner.vue';
+// import MobileStoreBanner from '~/components/MobileStoreBanner.vue';
 import LazyHydrate from 'vue-lazy-hydration';
 import { getProductVariantByConfiguration } from '~/helpers';
 
@@ -217,7 +217,7 @@ export default {
       mobile: { url: img.small },
       desktop: { url: img.normal },
       big: { url: img.big },
-      alt: product.value._name || product.value.name
+      alt: product.value.name || product.value.name
     })));
 
     onSSR(async () => {
@@ -286,15 +286,15 @@ export default {
     SfButton,
     InstagramFeed,
     RelatedProducts,
-    MobileStoreBanner,
+    // MobileStoreBanner,
     LazyHydrate
   },
   data() {
     return {
       stock: 5,
       brand:
-          'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',
-      careInstructions: 'Do not wash!'
+          '',
+      careInstructions: ''
     };
   }
 };

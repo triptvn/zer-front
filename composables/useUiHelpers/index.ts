@@ -42,7 +42,7 @@ const useUiHelpers = () => {
 
     return {
       collectionSlug: categorySlug,
-      take: parseInt(query.itemsPerPage, 10) || 20,
+      take: parseInt(query.itemsPerPage, 10) || 100,
       groupByProduct: true,
       sort: sortOptions,
       facetValueIds: query.attributes || []
@@ -60,7 +60,7 @@ const useUiHelpers = () => {
       page: parseInt(query.page, 10) || 1,
       sort: query.sort || 'latest',
       filters: getFiltersDataFromUrl(instance, true),
-      itemsPerPage: parseInt(query.itemsPerPage, 10) || 20,
+      itemsPerPage: parseInt(query.itemsPerPage, 10) || 100,
       phrase: query.phrase
     };
   };

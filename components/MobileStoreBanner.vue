@@ -6,7 +6,7 @@
     class="sf-banner--left desktop-only banner-app"
   >
     <template #call-to-action>
-      <div class="banner-app__call-to-action">
+      <!-- <div class="banner-app__call-to-action">
         <SfButton
           class="banner-app__button sf-button--pure"
           aria-label="Go to Apple Product"
@@ -27,7 +27,7 @@
             alt="Google play"
           />
         </SfButton>
-      </div>
+      </div> -->
     </template>
   </SfBanner>
 </template>
